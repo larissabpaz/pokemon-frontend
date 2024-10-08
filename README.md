@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokémon Frontend
 
-## Getting Started
+Este projeto é a interface do usuário para uma aplicação de interação com Pokémons. Utiliza Next.js para o desenvolvimento do front-end, TypeScript como linguagem principal e Material UI para o design de componentes.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Exibe Pokémons da primeira geração obtidos a partir da PokeAPI.
+- Permite capturar e liberar Pokémons.
+- Mostra uma lista de Pokémons capturados.
+- Integração com o backend para ações como captura e liberação.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js >= 18.17.0
+- npm ou yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalação
 
-## Learn More
+1. **Clone o repositório:**
 
-To learn more about Next.js, take a look at the following resources:
+git clone https://github.com/seu-usuario/pokemon-frontend.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Instale as dependências:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm install ou yarn install
 
-## Deploy on Vercel
+3. **Executando o Projeto**
+Inicie o servidor de desenvolvimento:
+npm run dev ou yarn dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Acesse o projeto em seu navegador:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Abra seu navegador e vá para: http://localhost:{porta}.
+
+## Scripts Disponíveis
+npm run dev: Inicia o servidor de desenvolvimento.
+npm run build: Compila o projeto para produção.
+npm run start: Inicia o servidor de produção após a build.
+npm run lint: Executa o linter para verificar erros no código.
+
+## Tecnologias Utilizadas
+Next.js: Framework React para renderização no lado do servidor e geração de páginas estáticas.
+TypeScript: Superset de JavaScript que adiciona tipagem estática.
+Material UI: Biblioteca de componentes React com design moderno e responsivo.
+PokeAPI: API pública para obter dados dos Pokémons.
+
+## Integração com o Backend
+Este frontend se comunica com uma API desenvolvida em Nest.js para realizar operações como capturar e liberar Pokémons. O backend deve estar rodando para que essas operações funcionem corretamente.
+
+## Endpoints do Backend
+GET /pokemons/random: Retorna um Pokémon aleatório.
+POST /pokemons/capture: Captura um Pokémon.
+GET /pokemons/captured: Lista os Pokémons capturados.
+DELETE /pokemons/release/:id: Libera um Pokémon capturado.
+
+## Contribuição
+Faça um fork do projeto.
+Crie uma branch para sua feature: git checkout -b minha-feature.
+Faça commit das suas alterações: git commit -m 'Adiciona minha feature'.
+Envie sua branch: git push origin minha-feature.
+Abra um Pull Request.
+
+## Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
