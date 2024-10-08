@@ -18,7 +18,7 @@ Este projeto é a interface do usuário para uma aplicação de interação com 
 
 1. **Clone o repositório:**
 
-git clone https://github.com/seu-usuario/pokemon-frontend.git
+git clone https://github.com/larissabpaz/pokemon-frontend.git
 
 2. **Instale as dependências:**
 
